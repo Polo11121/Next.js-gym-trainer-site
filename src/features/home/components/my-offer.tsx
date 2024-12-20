@@ -7,36 +7,28 @@ export const MyOffer = () => {
         <OfferCard
           title="Treningi personalne"
           type="Na żywo"
-          imgSrc="/images/pobrane (1).png"
+          imgSrc="/images/treningi-personalne.png"
           imgAlt="Treningi personalne"
-          buttonText="ZOBACZ WIĘCEJ"
-          buttonHref="/treningi-personalne"
         />
         <OfferCard
           title="Współpraca online"
           type="Online"
-          imgSrc="/images/aaaa.png"
+          imgSrc="/images/wspolpraca-online.png"
           imgAlt="Współpraca online"
-          buttonText="ZOBACZ WIĘCEJ"
-          buttonHref="/wspolpraca-online"
         />
       </div>
       <div className="flex flex-row gap-[30px]">
         <OfferCard
-          title="Plany treningowe"
+          title="Współpraca żywieniowa"
           type="Online"
-          imgSrc="/images/pobrane.png"
-          imgAlt="Plany treningowe"
-          buttonText="ZOBACZ WIĘCEJ"
-          buttonHref="/plany-treningowe"
+          imgSrc="/images/wspolpraca-zywieniowa.png"
+          imgAlt="Współpraca żywieniowa"
         />
         <OfferCard
-          title="Treningi w parze"
+          title="Dodatkowe usługi"
           type="Na żywo"
-          imgSrc="/images/monix-jedras.png"
-          imgAlt="Treningi w parze"
-          buttonText="ZOBACZ WIĘCEJ"
-          buttonHref="/treningi-w-parze"
+          imgSrc="/images/dodatkowe-uslugi.png"
+          imgAlt="Dodatkowe usługi"
         />
       </div>
     </section>

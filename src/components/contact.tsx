@@ -48,8 +48,10 @@ export const Contact = ({ showContactForm = true }: ContactProps) => (
           </span>
         </Link>
         <Link
-          href="/"
+          href="https://www.instagram.com/monika_habant"
           className="flex gap-[20px] items-center font-bold cursor-pointer group"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaInstagram size={42} className="text-primary" />
           <span className="group-hover:text-primary group-focus:text-primary">
@@ -57,8 +59,10 @@ export const Contact = ({ showContactForm = true }: ContactProps) => (
           </span>
         </Link>
         <Link
-          href="/"
+          href="https://www.facebook.com/monika.habant"
           className="flex gap-[20px] items-center font-bold cursor-pointer group	"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaFacebook size={42} className="text-primary" />
           <span className="group-hover:text-primary group-focus:text-primary">

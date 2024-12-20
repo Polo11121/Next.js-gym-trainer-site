@@ -19,7 +19,10 @@ export const InfoSection = ({
   rightPanelContent,
 }: InfoSectionProps) => (
   <div className={cn(isGrayBg && "bg-tertiaryGray")}>
-    <article className="container px-32 mx-auto flex my-[70px] gap-[40px]">
+    <article
+      className="container px-32 mx-auto flex my-[70px] gap-[40px]"
+      id={title.replace(/\s+/g, "-").toLowerCase()}
+    >
       <div className="flex-1">
         <h2 className="text-[40px] font-bold font-oswald flex flex-col mb-[40px] text-primary">
           {title}
@@ -52,7 +55,7 @@ export const InfoSection = ({
           )}
           <NavigationButton
             ariaLabel="Skontaktuj się ze mną już dziś!"
-            href="test"
+            href="/kontakt"
             variant="tertiary"
             className="mx-auto border-white border-1"
           >

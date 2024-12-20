@@ -1,5 +1,10 @@
 import { Contact } from "@/components/contact";
 import Map from "@/components/map-client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Monika Habant - Kontakt",
+};
 
 const ContactPage = () => (
   <main className="pt-[200px] ">

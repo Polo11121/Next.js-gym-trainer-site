@@ -9,7 +9,7 @@ type SocialMediaProps = {
 export const SocialMedia = ({ color = "white", size }: SocialMediaProps) => (
   <>
     <Link
-      href="https://www.instagram.com/"
+      href="https://www.instagram.com/monika_habant"
       passHref
       aria-label="Link do Instagrama"
       target="_blank"
@@ -22,7 +22,7 @@ export const SocialMedia = ({ color = "white", size }: SocialMediaProps) => (
       />
     </Link>
     <Link
-      href="https://www.instagram.com/"
+      href="https://www.facebook.com/monika.habant"
       passHref
       aria-label="Link do Facebooka"
       target="_blank"
@@ -35,7 +35,7 @@ export const SocialMedia = ({ color = "white", size }: SocialMediaProps) => (
       />
     </Link>
     <Link
-      href="https://www.instagram.com/"
+      href="https://www.tiktok.com/@monika.habant"
       passHref
       aria-label="Link do TikToka"
       target="_blank"

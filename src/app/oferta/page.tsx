@@ -1,4 +1,9 @@
 import { InfoSection } from "@/features/offer/components/info-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Monika Habant - Oferta",
+};
 
 const AboutMePage = () => {
   return (

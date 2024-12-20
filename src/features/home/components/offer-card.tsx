@@ -6,18 +6,9 @@ type OfferCardProps = {
   type: string;
   imgSrc: string;
   imgAlt: string;
-  buttonText: string;
-  buttonHref: string;
 };
 
-export const OfferCard = ({
-  title,
-  type,
-  imgSrc,
-  imgAlt,
-  buttonText,
-  buttonHref,
-}: OfferCardProps) => (
+export const OfferCard = ({ title, type, imgSrc, imgAlt }: OfferCardProps) => (
   <article
     className="bg-secondaryGray w-[640px] h-[310px] rounded-sm drop-shadow-sm p-[70px] group overflow-hidden relative"
     aria-labelledby={title.replace(/\s+/g, "-").toLowerCase()}
@@ -32,11 +23,11 @@ export const OfferCard = ({
       </h3>
     </header>
     <NavigationButton
-      href={buttonHref}
+      href={`/oferta#${title.replace(/\s+/g, "-").toLowerCase()}`}
       ariaLabel={`Przejdź do strony: ${title}`}
       variant="ghost"
     >
-      {buttonText}
+      ZOBACZ WIĘCEJ
     </NavigationButton>
     <Image
       className="absolute bottom-0 right-0 group-hover:scale-110 transition duration-300 delay-75"
