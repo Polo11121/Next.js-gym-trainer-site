@@ -1,7 +1,7 @@
 import { Contact } from "@/components/contact";
 import { ActivityList } from "@/features/pricing/activity-list";
 
-export const PricingPage = () => {
+const PricingPage = () => {
   return (
     <main className="pt-[200px] ">
       <header className="bg-tertiaryGray p-[70px] text-center">
