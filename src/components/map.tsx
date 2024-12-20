@@ -1,26 +1,14 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
-import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { Icon } from "leaflet";
 
-export const Map = () => {
-  const [isMounted, setIsMounted] = useState(false);
+const Map = () => {
   const latitude = 53.693189;
   const longitude = 19.96107;
   const greenIcon = new Icon({
     iconUrl: "/images/gym.png",
     iconSize: [50, 50],
   });
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
 
   return (
     <MapContainer
@@ -39,3 +27,5 @@ export const Map = () => {
     </MapContainer>
   );
 };
+
+export default Map;

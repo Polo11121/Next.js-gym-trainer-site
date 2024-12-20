@@ -1,5 +1,5 @@
 import { Contact } from "@/components/contact";
-import { Map } from "@/components/map";
+import Map from "@/components/map-client";
 
 const ContactPage = () => (
   <main className="pt-[200px] ">
