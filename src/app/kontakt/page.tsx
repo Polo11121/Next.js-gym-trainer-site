@@ -1,7 +1,7 @@
 import { Contact } from "@/components/contact";
 import { Map } from "@/components/map";
 
-export const ContactPage = () => (
+const ContactPage = () => (
   <main className="pt-[200px] ">
     <header className="bg-tertiaryGray p-[70px] text-center">
       <h1 className="text-primary text-[50px] font-bold font-oswald mb-[10px]">
