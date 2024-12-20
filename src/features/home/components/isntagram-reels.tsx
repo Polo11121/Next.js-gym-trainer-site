@@ -23,22 +23,22 @@ export const InstagramReels = () => (
       <Reel
         imageSrc="/images/insta-1.jpg"
         altText="Reel z treningu personalnego"
-        href="https://www.instagram.com/monika_habant/"
+        href="https://www.instagram.com/p/DCOfA5bMMj6/"
       />
       <Reel
         imageSrc="/images/insta-2.jpg"
         altText="Reel z sesji motywacyjnej"
-        href="https://www.instagram.com/monika_habant/"
+        href="https://www.instagram.com/p/DB8MSZIM5bU/"
       />
       <Reel
         imageSrc="/images/insta-3.jpg"
         altText="Reel z przygotowywania posiłków"
-        href="https://www.instagram.com/monika_habant/"
+        href="https://www.instagram.com/p/DDEVW_eMh_b/"
       />
       <Reel
         imageSrc="/images/insta-4.jpg"
         altText="Reel z sesji treningowej na świeżym powietrzu"
-        href="https://www.instagram.com/monika_habant/"
+        href="https://www.instagram.com/p/DDW8w95sI2E/"
       />
     </div>
   </section>
