@@ -30,7 +30,7 @@ export const Contact = ({ showContactForm = true }: ContactProps) => (
         <p className="font-[15px]">
           Masz jakieś pytania? Napisz lub zadzwoń do mnie! Chętnie odpowiem na
           Twoje wszystkie pytania. Znajdziesz mnie też na Instagramie i
-          Facebooku pod nickiem: Trener Joanna.
+          Facebooku pod nickiem: Monika Habant.
         </p>
       </header>
       <div className="flex flex-col gap-[20px] text-[18px] font-oswald cursor-pointer">
