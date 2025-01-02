@@ -44,7 +44,7 @@ export const Contact = ({ showContactForm = true }: ContactProps) => (
         >
           <MdOutlineMailOutline size={42} className="text-primary" />
           <span className="group-hover:text-primary group-focus:text-primary">
-            twojastara123@gmail.com
+            poczta-test@gmail.com
           </span>
         </Link>
         <Link
