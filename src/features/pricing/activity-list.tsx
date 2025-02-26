@@ -7,6 +7,7 @@ const ACTIVITIES_LIST = [
       { activity: "Pakiet 8 treningów", price: "720 zł" },
       { activity: "Pakiet 12 treningów", price: "1020 zł" },
     ],
+    additionalInfo: "* Płatność za pakiety wymagana z góry.",
   },
   {
     sectionName: "Trening w parze (DUO)",
@@ -16,6 +17,7 @@ const ACTIVITIES_LIST = [
       { activity: "Pakiet 8 treningów", price: "1120 zł / 560 zł za osobę" },
       { activity: "Pakiet 12 treningów", price: "1560 zł / 780 zł za osobę" },
     ],
+    additionalInfo: "* Płatność za pakiety wymagana z góry.",
   },
   {
     sectionName: "Trening grupowy (TRIO)",
@@ -38,6 +40,18 @@ const ACTIVITIES_LIST = [
     ],
   },
   {
+    sectionName: "Promocja!",
+    activities: [
+      {
+        activity:
+          "Wybierając plan treningowy i jadlopis razem, otrzymujesz 20% zniżki",
+        price: "20% zniżki!",
+      },
+    ],
+    additionalInfo:
+      "Skorzystaj z promocji już dziś! Zadbaj o swoje zdrowie i formę w sposób kompleksowy – połącz treningi z indywidualnie dopasowaną dietą, by osiągnąć jeszcze lepsze rezultaty, szybciej i skuteczniej. Wspólnie stworzymy plan, który odpowiada Twoim celom i potrzebom.",
+  },
+  {
     sectionName: "Dodatkowe usługi",
     activities: [
       { activity: "Drenaż limfatyczny", price: "Ustalane indywidualnie" },
@@ -55,30 +69,42 @@ const ACTIVITIES_LIST = [
   },
 ];
 
-export const ActivityList = () => {
-  return (
-    <div className="w-full">
-      {ACTIVITIES_LIST.map((section) => (
-        <div
-          key={section.sectionName}
-          className="[&:not(:last-child)]:mb-[50px]"
+export const ActivityList = () => (
+  <div className="w-full px-6">
+    {ACTIVITIES_LIST.map((section) => (
+      <div key={section.sectionName} className="[&:not(:last-child)]:mb-[50px]">
+        <h3 className="text-[18px] md:text-[20px] font-oswald text-primary mb-[30px] font-bold">
+          {section.sectionName}
+        </h3>
+        <ul
+          className="flex flex-col gap-[20px]"
+          role="list"
+          aria-labelledby={`section-${section.sectionName}`}
         >
-          <h2 className="text-[20px] font-oswald text-primary mb-[30px] font-bold">
-            {section.sectionName}
-          </h2>
-          <ul className="flex flex-col	gap-[20px]">
-            {section.activities.map((activity) => (
-              <li
-                key={activity.activity}
-                className="p-[12px] border-b	border-gray-400 border-dashed flex justify-between"
+          {section.activities.map((activity) => (
+            <li
+              key={activity.activity}
+              className="p-[12px] border-b border-gray-400 border-dashed flex justify-between"
+              role="listitem"
+            >
+              <span className="text-[14px] md:text-[16px]">
+                {activity.activity}
+              </span>
+              <span
+                className="font-bold text-[14px] md:text-[16px] text-center"
+                aria-hidden="true"
               >
-                <p>{activity.activity}</p>
-                <span className="font-bold">{activity.price}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  );
-};
+                {activity.price}
+              </span>
+            </li>
+          ))}
+        </ul>
+        {section.additionalInfo && (
+          <p className="mt-[20px] text-[12px] md:text-[14px] font-semibold text-primary">
+            {section.additionalInfo}
+          </p>
+        )}
+      </div>
+    ))}
+  </div>
+);

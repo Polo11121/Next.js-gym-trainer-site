@@ -16,7 +16,7 @@ export const OpinionCard = ({
       .toLowerCase()}-opinia-naglowek`}
   >
     <div
-      className={`h-fit rounded-[35px] p-[50px] text-[18px] ${
+      className={`h-fit rounded-[35px] p-[25px] md:p-[50px] text-[18px] ${
         isDarkBackground ? "text-white bg-primary" : "text-black bg-[#E8E8E8]"
       }`}
     >

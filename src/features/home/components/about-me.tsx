@@ -5,24 +5,26 @@ import Image from "next/image";
 export const AboutMe = () => (
   <section
     id="o-mnie"
-    className="container mx-auto px-32 flex flex-col gap-[72px]"
+    className="container mx-auto flex flex-col gap-[72px] px-6 md:mt-[60px]"
     aria-labelledby="naglowek-o-mnie"
   >
-    <div className="flex flex-row gap-20">
-      <Image
-        alt="Zdjęcie Monika"
-        src="/images/monix.jpg"
-        width={615}
-        height={800}
-      />
-      <div className="flex flex-col gap-10 py-[120px]">
+    <div className="flex flex-col-reverse xl:flex-row gap-10">
+      <div className="relative w-full h-[600px] md:h-[900px] xl:h-auto">
+        <Image
+          alt="Monika Habant - trener personalny"
+          src="/images/get-to-know-me.jpeg"
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
+      <div className="flex flex-col gap-10 pt-[60px] xl:py-[120px] w-full">
         <h2
-          className="text-primary font-oswald font-semibold text-[36px]"
+          className="text-primary font-oswald font-semibold text-[30px] xl:text-[36px]"
           id="naglowek-o-mnie"
         >
           Poznaj mnie
         </h2>
-        <div className="flex flex-col gap-5 text-[18px] font-normal">
+        <div className="flex flex-col gap-5 text-[15px] xl:text-[18px] font-normal ">
           <p>
             Czesć! Mam na imię Monika. Jestem trenerem personalnym i trenerem
             dzieci i młodzieży w klubie kolarskim Ostróda Sport Team.Ukończyłam
@@ -49,7 +51,11 @@ export const AboutMe = () => (
               <SocialMedia size={18} color="black" />
             </div>
           </div>
-          <NavigationButton href="/oferta" ariaLabel="Zapoznaj się z ofertą">
+          <NavigationButton
+            href="/oferta"
+            ariaLabel="Zapoznaj się z ofertą"
+            className="lg:text-[18px] text-[15px]"
+          >
             Zapoznaj się z ofertą
           </NavigationButton>
         </div>

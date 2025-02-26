@@ -1,18 +1,22 @@
 import { Contact } from "@/components/contact";
-import Map from "@/components/map-client";
 import { Metadata } from "next";
+import Map from "@/components/map-client";
 
 export const metadata: Metadata = {
   title: "Monika Habant - Kontakt",
+  description:
+    "Skontaktuj się z Moniką Habant - numer telefonu, e-mail oraz media społecznościowe.",
+  keywords:
+    "kontakt, Monika Habant, numer telefonu, e-mail, media społecznościowe",
 };
 
 const ContactPage = () => (
-  <main className="pt-[200px] ">
-    <header className="bg-tertiaryGray p-[70px] text-center">
-      <h1 className="text-primary text-[50px] font-bold font-oswald mb-[10px]">
-        KONTAKT
+  <main className="pt-[60px] md:pt-[85px] lg:pt-[200px]">
+    <header className="bg-tertiaryGray p-[35px] text-center">
+      <h1 className="text-primary text-[32px] md:text-[50px] font-bold font-oswald mb-[10px]">
+        Kontakt
       </h1>
-      <p className="font-[15px]">
+      <p className="text-[15px]">
         <span className="text-primary font-semibold">
           Potrzebujesz pomocy?{" "}
         </span>

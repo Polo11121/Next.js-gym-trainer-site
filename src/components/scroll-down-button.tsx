@@ -27,7 +27,7 @@ export const ScrollDownButton = ({ targetId }: ScrollDownButtonProps) => {
       <span
         aria-hidden="true"
         className="font-semibold text-xl text-white  group-hover:text-primary transition duration-300 delay-75 
-      group-focus:text-primary"
+      group-focus:text-primary md:block hidden"
       >
         PRZEWIŃ
       </span>

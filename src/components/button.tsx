@@ -4,11 +4,13 @@ type ButtonProps = {
   children: ReactNode;
   ariaLabel: string;
   variant?: "primary" | "secondary" | "outline" | "ghost";
+  type?: "submit" | "reset" | "button";
 };
 
 export const Button = ({
   children,
   ariaLabel,
+  type = "button",
   variant = "primary",
 }: ButtonProps) => {
   const variantStyles = {
@@ -37,6 +39,7 @@ export const Button = ({
       role="button"
       aria-label={ariaLabel}
       className={variantStyles[variant]}
+      type={type}
     >
       {children}
     </button>

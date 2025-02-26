@@ -11,7 +11,7 @@ type ReelProps = {
 export const Reel = ({ imageSrc, altText, href }: ReelProps) => (
   <Link
     href={href}
-    className="w-[400px] h-[400px] rounded-[35px] bg-teal-100 relative group block overflow-hidden focus:outline focus:outline-2 focus:outline-primary "
+    className="size-[300px] md:max-w-[400px] md:max-h-[400px] rounded-[35px] bg-teal-100 relative group block overflow-hidden focus:outline focus:outline-2 focus:outline-primary "
     aria-label={altText}
     target="_blank"
     rel="noopener noreferrer"

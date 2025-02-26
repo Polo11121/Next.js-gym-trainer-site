@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/hero-pattern.jpg')",
+        "hero-pattern": "url('/images/hero-banner.jpeg')",
       },
       colors: {
         background: "var(--background)",
@@ -21,7 +21,7 @@ export default {
         tertiaryGray: "#F3F3F3",
       },
       fontFamily: {
-        oswald: ["var(--font-oswald)"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
     },
   },

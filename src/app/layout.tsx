@@ -1,26 +1,22 @@
 import type { Metadata } from "next";
-import { Oswald, Roboto } from "next/font/google";
-import "./globals.css";
-import { Header } from "../components/header";
+import { Poppins } from "next/font/google";
+import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import "./globals.css";
+import Script from "next/script";
 
-const roboto = Roboto({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-roboto",
-  weight: ["400", "500", "700"],
-});
-
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Monika Habant - Trener Personalny",
+  title: "Trener Personalny Ostróda – Monika Habant | Treningi i Dieta",
   description:
-    "Profesjonalne treningi personalne w Ostródzie. Zbuduj formę z Moniką Habant!",
+    "Profesjonalne treningi personalne w Ostródzie! Indywidualne plany treningowe i skuteczna dieta dopasowana do Twoich celów. Zadbaj o swoją formę z Moniką Habant!",
   keywords:
-    "trener personalny Ostróda, personal trainer Ostróda, trening personalny Ostróda, trening siłowy Ostróda, trener fitness Ostróda, odchudzanie Ostróda, dieta Ostróda, trening odchudzający Ostróda, trening siłowy dla kobiet Ostróda, ćwiczenia na siłowni Ostróda, zdrowy styl życia Ostróda, trening personalny dla początkujących Ostróda, budowanie masy mięśniowej Ostróda, poprawa kondycji Ostróda, trener odchudzania Ostróda, indywidualny plan treningowy Ostróda, trening w Ostródzie, motywacja do treningu Ostróda, fitness Ostróda, trening dla seniorów Ostróda",
+    "trener personalny Ostróda, trening personalny Ostróda, siłownia Ostróda, odchudzanie Ostróda, plan treningowy Ostróda, dieta Ostróda, zdrowy styl życia Ostróda, trening siłowy Ostróda, fitness Ostróda, ćwiczenia Ostróda, trening dla kobiet Ostróda, trener Ostróda, personal trainer Ostróda",
   authors: [
     {
       name: "Monika Habant",
@@ -46,7 +42,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/images/logo-white.png" sizes="any" />
-      <body className={`${roboto.className} ${oswald.variable} antialiased`}>
+      <Script
+        id="json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Monika Habant - Trener Personalny i Dietetyk",
+            description:
+              "Profesjonalne treningi personalne i doradztwo dietetyczne. Pomagam w osiąganiu celów zdrowotnych i sylwetkowych.",
+            url: "https://monikahabant.pl",
+            sameAs: [
+              "https://www.instagram.com/monika_habant",
+              "https://www.facebook.com/monika.habant",
+              "https://www.tiktok.com/@monika.habant",
+            ],
+          }),
+        }}
+      />
+
+      <body className={`${poppins.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

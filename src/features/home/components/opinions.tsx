@@ -3,8 +3,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { OpinionCard } from "./opinion-card";
+import { useGetCurrentWidth } from "@/utils/use-get-current-width";
 import "swiper/css";
-
 import "swiper/css/pagination";
 
 const OPINIONS = [
@@ -61,36 +61,53 @@ const OPINIONS = [
   },
 ];
 
-export const Opinions = () => (
-  <section className="mt-[70px]" aria-labelledby="opinie-naglowek">
-    <header className="text-center flex flex-col gap-[10px]">
-      <h3
-        id="opinie-naglowek"
-        className="text-primary text-[42px] font-bold font-oswald"
-      >
-        OPINIE
-      </h3>
-      <p className="font-[15px]">Sprawdź, co mówią o mnie moi klienci</p>
-    </header>
-    <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
-      grabCursor={true}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Pagination]}
-      className="container mt-[50px] h-[450px]"
+export const Opinions = () => {
+  const currentWidth = useGetCurrentWidth();
+
+  const getSlidesPerView = () => {
+    if (currentWidth < 1030) {
+      return 1;
+    }
+    if (currentWidth < 1540) {
+      return 2;
+    }
+    return 3;
+  };
+
+  return (
+    <section
+      className="mt-[35px] md:mt-[70px]"
+      aria-labelledby="opinie-naglowek"
     >
-      {OPINIONS.map(({ opinion, name }, index) => (
-        <SwiperSlide className="w-1/3" key={index}>
-          <OpinionCard
-            opinion={opinion}
-            name={name}
-            isDarkBackground={index % 2 !== 0}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </section>
-);
+      <header className="text-center flex flex-col gap-[10px]">
+        <h3
+          id="opinie-naglowek"
+          className="text-primary text-[42px] font-bold font-oswald"
+        >
+          OPINIE
+        </h3>
+        <p className="font-[15px]">Sprawdź, co mówią o mnie moi klienci</p>
+      </header>
+      <Swiper
+        slidesPerView={getSlidesPerView()}
+        spaceBetween={30}
+        grabCursor={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="container mt-[50px] h-[450px]"
+      >
+        {OPINIONS.map(({ opinion, name }, index) => (
+          <SwiperSlide className="w-full h-full" key={index}>
+            <OpinionCard
+              opinion={opinion}
+              name={name}
+              isDarkBackground={index % 2 !== 0}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+  );
+};

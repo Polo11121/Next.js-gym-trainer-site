@@ -2,22 +2,22 @@ import { Reel } from "@/features/home/components/reel";
 
 export const InstagramReels = () => (
   <section
-    className="bg-black mt-[70px] py-[130px]"
+    className="bg-black mt-[35px] lg:mt-[70px] py-[65px] lg:py-[130px]"
     aria-labelledby="moj-instagram-naglowek"
   >
     <header>
       <h2
         id="moj-instagram-naglowek"
-        className="text-white text-[42px] font-bold font-oswald text-center"
+        className="text-white text-[32px] lg:text-[42px] font-bold font-oswald text-center"
       >
         ŚLEDŹ MNIE NA INSTAGRAMIE
       </h2>
-      <h2 className="text-primary text-[42px] font-bold font-oswald text-center">
+      <h2 className="text-primary text-[32px] lg:text-[42px] font-bold font-oswald text-center">
         @monika_habant
       </h2>
     </header>
     <div
-      className="mx-auto mt-[50px] flex gap-10 justify-center cursor-pointer"
+      className="mx-auto mt-[25px] lg:mt-[50px] flex flex-col lg:flex-row gap-10 items-center justify-center cursor-pointer"
       aria-label="Reels na Instagramie"
     >
       <Reel

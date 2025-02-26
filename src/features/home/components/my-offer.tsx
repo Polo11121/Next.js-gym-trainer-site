@@ -2,8 +2,8 @@ import { OfferCard } from "@/features/home/components/offer-card";
 
 export const MyOffer = () => {
   return (
-    <section className="flex flex-col gap-[30px] mt-[70px] container mx-auto px-32">
-      <div className="flex flex-row gap-[30px]">
+    <section className="flex flex-col gap-[30px] mt-[60px] xl:mt-[70px] container mx-auto xl:px-32">
+      <div className="flex flex-col items-center lg:flex-row gap-[30px]">
         <OfferCard
           title="Treningi personalne"
           type="Na żywo"
@@ -17,7 +17,7 @@ export const MyOffer = () => {
           imgAlt="Współpraca online"
         />
       </div>
-      <div className="flex flex-row gap-[30px]">
+      <div className="flex flex-col items-center lg:flex-row gap-[30px]">
         <OfferCard
           title="Współpraca żywieniowa"
           type="Online"
