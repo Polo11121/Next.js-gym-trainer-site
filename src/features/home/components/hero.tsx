@@ -5,7 +5,7 @@ import { SocialMedia } from "@/components/social-media";
 export const Hero = () => (
   <section
     id="glowna-sekcja"
-    className="bg-hero-pattern h-screen bg-cover bg-center pt-[100px] md:pt-[200px] flex flex-col"
+    className="bg-hero-pattern h-lvh bg-cover bg-center pt-[100px] md:pt-[200px] flex flex-col"
     aria-labelledby="glowna-sekcja-naglowek"
   >
     <div className="flex flex-col md:flex-row justify-between flex-1">
