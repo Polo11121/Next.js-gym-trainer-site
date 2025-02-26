@@ -6,7 +6,7 @@ import { Opinions } from "@/features/home/components/opinions";
 import { InstagramReels } from "@/features/home/components/isntagram-reels";
 import { Contact } from "@/components/contact";
 import { Metadata } from "next";
-import ScrollToTopButton from "@/components/scroll-top-button";
+import { ScrollToTopButton } from "@/components/scroll-top-button";
 
 export const metadata: Metadata = {
   title: "Monika Habant - Strona Główna",

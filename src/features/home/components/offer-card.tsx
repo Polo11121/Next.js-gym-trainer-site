@@ -3,6 +3,7 @@
 import { NavigationButton } from "@/components/navigation-button";
 import { useGetCurrentWidth } from "@/utils/use-get-current-width";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type OfferCardProps = {
   title: string;
@@ -13,6 +14,15 @@ type OfferCardProps = {
 
 export const OfferCard = ({ title, type, imgSrc, imgAlt }: OfferCardProps) => {
   const currentWidth = useGetCurrentWidth();
+  const [imageSize, setImageSize] = useState({ width: 200, height: 200 });
+
+  useEffect(() => {
+    setImageSize({
+      width: currentWidth < 768 ? 180 : 200,
+      height: currentWidth < 768 ? 180 : 200,
+    });
+  }, [currentWidth]);
+
   return (
     <article
       className="bg-secondaryGray w-full max-w-[640px] h-[310px] rounded-sm drop-shadow-sm p-[35px] md:p-[70px] group overflow-hidden relative"
@@ -37,8 +47,8 @@ export const OfferCard = ({ title, type, imgSrc, imgAlt }: OfferCardProps) => {
       <Image
         className="absolute bottom-0 right-0 group-hover:scale-110 transition duration-300 delay-75  -z-50"
         alt={imgAlt}
-        width={currentWidth < 768 ? 180 : 200}
-        height={currentWidth < 768 ? 180 : 200}
+        width={imageSize.width}
+        height={imageSize.height}
         src={imgSrc}
         priority
       />

@@ -3,10 +3,17 @@
 import { useEffect, useState } from "react";
 import { ChevronUp } from "lucide-react";
 
-const ScrollToTopButton = ({ color = "#000" }) => {
+export const ScrollToTopButton = ({ color = "#000" }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight / 2) {
         setIsVisible(true);
@@ -17,7 +24,7 @@ const ScrollToTopButton = ({ color = "#000" }) => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMounted]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -35,5 +42,3 @@ const ScrollToTopButton = ({ color = "#000" }) => {
     </button>
   );
 };
-
-export default ScrollToTopButton;
