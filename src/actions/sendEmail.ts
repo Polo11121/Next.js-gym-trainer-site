@@ -18,7 +18,7 @@ export async function sendEmail({
   try {
     await resend.emails.send({
       from: email,
-      to: "kontakt@monikahabant.com",
+      to: "habantmonika@gmail.com",
       subject: `Nowa wiadomość od ${name}`,
       text: `Od: ${name} \nEmail: ${email} \nTelefon: ${phone} \n\nWiadomość:\n${message}`,
     });
