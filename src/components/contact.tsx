@@ -200,7 +200,17 @@ export const Contact = ({ showContactForm = true, imageUrl }: ContactProps) => {
                 przetwarzane w celu obsługi zapytania przesłanego przez
                 formularz kontaktowy. Więcej informacji o przetwarzaniu danych
                 osobowych, w tym o przysługujących Państwu prawach, znajduje się
-                w Polityce prywatności.
+                w{" "}
+                <a
+                  href="/polityka-prywatnosci"
+                  className="underline text-primary font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Przejdź do Polityki Prywatności"
+                >
+                  Polityce Prywatności
+                </a>
+                .
               </span>
             </label>
             <div className="flex justify-center md:justify-start">

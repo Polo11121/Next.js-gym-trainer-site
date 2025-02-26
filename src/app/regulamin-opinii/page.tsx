@@ -35,7 +35,10 @@ const ReviewPolicyPage = () => (
           Regulamin określa zasady zamieszczania opinii na stronie{" "}
           <Link
             href="https://monikahabant.pl"
-            className="text-primary underline"
+            className="text-primary underline font-bold"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            aria-label="Przejdź do strony głównej"
           >
             monikahabant.pl
           </Link>{" "}
