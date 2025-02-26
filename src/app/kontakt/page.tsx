@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const ContactPage = () => (
-  <main className="pt-[60px] md:pt-[85px] lg:pt-[200px]">
+  <main className="pt-[71px] md:pt-[95px] lg:pt-[200px]">
     <header className="bg-tertiaryGray p-[35px] text-center">
       <h1 className="text-primary text-[32px] md:text-[50px] font-bold font-oswald mb-[10px]">
         Kontakt
