@@ -9,9 +9,20 @@ import { Metadata } from "next";
 import { ScrollToTopButton } from "@/components/scroll-top-button";
 
 export const metadata: Metadata = {
-  title: "Monika Habant - Strona Główna",
+  title: "Monika Habant – Trener personalny Ostróda",
   description:
-    "Trener personalny Monika Habant - profesjonalne treningi, indywidualne podejście, zdrowy styl życia i skuteczne metamorfozy. Sprawdź ofertę i skontaktuj się!",
+    "Trener personalny Monika Habant z Ostródy – profesjonalne treningi personalne, indywidualne podejście, metamorfozy sylwetki i zdrowy styl życia. Umów się na konsultację!",
+  keywords: [
+    "trener personalny Ostróda",
+    "Monika Habant",
+    "trening personalny Ostróda",
+    "ćwiczenia na odchudzanie",
+    "metamorfozy sylwetki",
+    "treningi indywidualne Ostróda",
+    "zdrowy styl życia",
+    "kobieta trener personalny",
+    "dieta i trening Ostróda",
+  ],
 };
 
 const HomePage = () => (

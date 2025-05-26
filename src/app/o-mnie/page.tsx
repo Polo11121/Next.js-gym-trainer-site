@@ -7,8 +7,6 @@ export const metadata: Metadata = {
   title: "Monika Habant - O mnie",
   description:
     "Poznaj Monikę Habant – trenerkę personalną i dietetyczkę. Dowiedz się więcej o jej pasji do sportu, zdrowego stylu życia i podejściu do treningów.",
-  keywords:
-    "Monika Habant, trener personalny, dietetyk, psychodietetyka, treningi personalne, zdrowy styl życia, Ostróda Sport Team, kolarstwo, ProfiFitness School, siłownia, fitness, odżywianie, motywacja",
 };
 
 const AboutMePage = () => (

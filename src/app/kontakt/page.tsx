@@ -6,8 +6,6 @@ export const metadata: Metadata = {
   title: "Monika Habant - Kontakt",
   description:
     "Skontaktuj się z Moniką Habant - numer telefonu, e-mail oraz media społecznościowe.",
-  keywords:
-    "kontakt, Monika Habant, numer telefonu, e-mail, media społecznościowe",
 };
 
 const ContactPage = () => (

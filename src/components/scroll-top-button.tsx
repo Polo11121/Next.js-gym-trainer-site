@@ -37,6 +37,7 @@ export const ScrollToTopButton = ({ color = "#000" }) => {
         isVisible ? "opacity-100" : "opacity-0"
       }`}
       style={{ color }}
+      aria-label="Przewiń do góry"
     >
       <ChevronUp size={24} stroke={color} />
     </button>

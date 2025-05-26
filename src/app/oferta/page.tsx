@@ -6,8 +6,6 @@ export const metadata: Metadata = {
   title: "Monika Habant - Oferta",
   description:
     "Sprawdź ofertę Moniki Habant: treningi personalne, współpraca online, doradztwo żywieniowe i dodatkowe usługi. Znajdź idealne rozwiązanie dla siebie!",
-  keywords:
-    "trening personalny, trener personalny Ostróda, treningi Ostróda, siłownia Ostróda, współpraca online, plan treningowy, plan dietetyczny, dieta, jadłospis, doradztwo żywieniowe, psychodietetyka, analiza składu ciała, masaż limfatyczny, regeneracja, XTREME FITNESS Ostróda, zdrowy styl życia, odchudzanie, budowanie masy mięśniowej, konsultacja dietetyczna",
 };
 
 const OfferPage = () => (
@@ -27,7 +25,7 @@ const OfferPage = () => (
         sukces.
       </p>
     </header>
-    <section className="flex flex-col" aria-labelledby="kontakt-naglowek">
+    <section className="flex flex-col">
       <InfoSection
         title="Treningi personalne"
         description="Wybór treningów personalnych to inwestycja w Twoje zdrowie, formę i samopoczucie. Dzięki indywidualnemu podejściu, każda sesja jest dostosowana do Twoich celów, poziomu zaawansowania i możliwości. Współpracując ze mną, masz pewność, że otrzymasz pełne wsparcie – od motywacji po poprawną technikę i skuteczne planowanie treningów. To nie tylko ćwiczenia, to droga do trwałych efektów i poprawy jakości życia.

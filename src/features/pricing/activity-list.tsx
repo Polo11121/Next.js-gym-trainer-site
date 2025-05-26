@@ -76,11 +76,7 @@ export const ActivityList = () => (
         <h3 className="text-[18px] md:text-[20px] font-oswald text-primary mb-[30px] font-bold">
           {section.sectionName}
         </h3>
-        <ul
-          className="flex flex-col gap-[20px]"
-          role="list"
-          aria-labelledby={`section-${section.sectionName}`}
-        >
+        <ul className="flex flex-col gap-[20px]" role="list">
           {section.activities.map((activity) => (
             <li
               key={activity.activity}

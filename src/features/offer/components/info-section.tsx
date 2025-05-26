@@ -26,7 +26,6 @@ export const InfoSection = ({
         className="container px-6 lg:px-0  mx-auto flex flex-col lg:flex-row  my-[35px] lg:my-[70px] gap-[40px]"
         id={sectionId}
         role="region"
-        aria-labelledby={`${sectionId}-heading`}
       >
         <div className="flex-1">
           <h2
@@ -40,10 +39,7 @@ export const InfoSection = ({
             {listSections.map((section, index) => (
               <div key={index}>
                 <h3 className="font-bold mb-[10px]">{section.title}</h3>
-                <ul
-                  className="list-disc pl-[20px] marker:text-primary flex flex-col gap-[10px]"
-                  aria-labelledby={`${sectionId}-list-${index}`}
-                >
+                <ul className="list-disc pl-[20px] marker:text-primary flex flex-col gap-[10px]">
                   {section.items.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -59,7 +55,6 @@ export const InfoSection = ({
           <div
             className="flex-1 flex flex-col gap-[20px] bg-primary p-6 lg:p-[60px] text-white text-[15px]"
             role="complementary"
-            aria-labelledby={`${sectionId}-right-panel`}
           >
             <h2 id={`${sectionId}-right-panel`} className="sr-only">
               Dodatkowe informacje dla sekcji {title}
@@ -67,10 +62,7 @@ export const InfoSection = ({
             {rightPanelContent.map((panel, index) => (
               <div key={index} className="flex flex-col gap-[10px]">
                 <h3 className="font-bold">{panel.title}</h3>
-                <ul
-                  className="list-disc pl-[20px] marker:text-white flex flex-col gap-[10px]"
-                  aria-labelledby={`${sectionId}-right-list-${index}`}
-                >
+                <ul className="list-disc pl-[20px] marker:text-white flex flex-col gap-[10px]">
                   {panel.items.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
