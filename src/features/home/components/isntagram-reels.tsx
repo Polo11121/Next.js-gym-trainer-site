@@ -21,22 +21,22 @@ export const InstagramReels = () => (
       aria-label="Reels na Instagramie"
     >
       <Reel
-        imageSrc="/images/insta-1.jpg"
+        imageSrc="/images/insta-1.webp"
         altText="Reel z treningu personalnego"
         href="https://www.instagram.com/p/DCOfA5bMMj6/"
       />
       <Reel
-        imageSrc="/images/insta-2.jpg"
+        imageSrc="/images/insta-2.webp"
         altText="Reel z sesji motywacyjnej"
         href="https://www.instagram.com/p/DB8MSZIM5bU/"
       />
       <Reel
-        imageSrc="/images/insta-3.jpg"
+        imageSrc="/images/insta-3.webp"
         altText="Reel z przygotowywania posiłków"
         href="https://www.instagram.com/p/DDEVW_eMh_b/"
       />
       <Reel
-        imageSrc="/images/insta-4.jpg"
+        imageSrc="/images/insta-4.webp"
         altText="Reel z sesji treningowej na świeżym powietrzu"
         href="https://www.instagram.com/p/DDW8w95sI2E/"
       />

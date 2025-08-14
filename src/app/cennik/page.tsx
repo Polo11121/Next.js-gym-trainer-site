@@ -25,7 +25,7 @@ const PricingPage = () => (
         Lista dostępnych usług i ich ceny
       </h2>
       <ActivityList />
-      <Contact showContactForm={false} imageUrl="/images/contact.jpeg" />
+      <Contact showContactForm={false} imageUrl="/images/contact.webp" />
     </section>
   </main>
 );

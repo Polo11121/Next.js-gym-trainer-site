@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/hero-banner.jpeg')",
+        "hero-pattern": "url('/images/hero-banner.webp')",
       },
       colors: {
         background: "var(--background)",

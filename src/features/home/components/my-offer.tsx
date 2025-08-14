@@ -7,13 +7,13 @@ export const MyOffer = () => {
         <OfferCard
           title="Treningi personalne"
           type="Na żywo"
-          imgSrc="/images/treningi-personalne.png"
+          imgSrc="/images/treningi-personalne.webp"
           imgAlt="Treningi personalne"
         />
         <OfferCard
           title="Współpraca online"
           type="Online"
-          imgSrc="/images/wspolpraca-online.png"
+          imgSrc="/images/wspolpraca-online.webp"
           imgAlt="Współpraca online"
         />
       </div>
@@ -21,13 +21,13 @@ export const MyOffer = () => {
         <OfferCard
           title="Współpraca żywieniowa"
           type="Online"
-          imgSrc="/images/wspolpraca-zywieniowa.png"
+          imgSrc="/images/wspolpraca-zywieniowa.webp"
           imgAlt="Współpraca żywieniowa"
         />
         <OfferCard
           title="Dodatkowe usługi"
           type="Na żywo"
-          imgSrc="/images/dodatkowe-uslugi.png"
+          imgSrc="/images/dodatkowe-uslugi.webp"
           imgAlt="Dodatkowe usługi"
         />
       </div>

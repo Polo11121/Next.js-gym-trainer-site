@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/images/logo-white.png" sizes="any" />
+      <link rel="icon" href="/images/logo-white.webp" sizes="any" />
       <Script
         id="json-ld"
         type="application/ld+json"

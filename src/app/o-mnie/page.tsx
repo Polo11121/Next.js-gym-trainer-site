@@ -39,7 +39,7 @@ const AboutMePage = () => (
         <div className="relative w-full h-[600px] md:h-[900px] xl:h-auto ">
           <Image
             alt="Monika Habant - trener personalny"
-            src="/images/about-me.jpeg"
+            src="/images/about-me.webp"
             layout="fill"
             objectFit="contain"
           />

@@ -16,7 +16,7 @@ export const Logo = ({
 }: LogoProps) => (
   <Image
     alt="Logo firmy"
-    src={`/images/${isWhite ? "logo-white.png" : "logo-black.png"}`}
+    src={`/images/${isWhite ? "logo-white.webp" : "logo-black.webp"}`}
     width={width}
     height={height}
     className={cn("bg-blend-multiply", className)}

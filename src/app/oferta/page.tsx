@@ -208,7 +208,7 @@ const OfferPage = () => (
         ]}
       />
     </section>
-    <Contact showContactForm={false} imageUrl="/images/oferta.jpeg" />
+    <Contact showContactForm={false} imageUrl="/images/oferta.webp" />
   </main>
 );
 
